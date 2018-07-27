@@ -34,9 +34,7 @@ def city_weather_info(weather)
   weath = {}
   weath[:city] = city
   weath[:description] = description
-  weath[:temperature_farenheit] = temperature_farenheit
-  weath[:temperature_farenheit] = (temperature_celsius - 32) * 0.56
-  weath[:temperature_celsius] = temperature_celsius
+  weath[:temperature_farenheit] = temperature_farenheits
   # fahrenheit = (celsius.to_i * 9 / 5) + 32
   return weath
 end
